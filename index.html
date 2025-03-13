@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <article class="card"></article>
+    <h2 id="jes--rangeValue">0</h2>
+    <input type="range" min="1" max="100">
+    <article class="card"></article>
+    <article class="card card--stopwatch">
+       <div>
+        <span class="timerText" id="js--minutesTimer">0</span>
+        <span class="timerText">:</span>
+        <span class="timerText"id="js--secondsTimer">0</span>
+        </div>
+        <section class="buttonWrapper">
+            <button class="button button--start" id="js--start">Start</button>
+            <button class="button button--stop" id="js--stop">Stop</button>
+            <button class="button button--reset">Reset</button>
+        </section>
+      
+    </article>
+</body>
+</html>
