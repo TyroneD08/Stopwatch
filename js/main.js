@@ -33,5 +33,21 @@
 
     /* hier begint slider */
     const rangeValue = document.getElementById("js--rangeValue");
-
     const slider = document.getElementById("js--slider");
+    const body = document.getElementById("js--body");
+    slider.value = 2;
+    
+    rangeValue.innerText = slider.value + "x";
+
+    slider.oninput = function(){
+        rangeValue.innerText = slider.value + "x";
+        body.style.fontSize = slider.value + "rem";
+    }
+
+    let data = {
+        "text": "Sōsuke Aizen is a cunning and highly intelligent antagonist in Bleach",
+        "img": "/img/thos-one-image-of-aizen-is-so-memeable-ima-call-it-v0-0kt9wa491i1d1.webp",
+    };
+
+    const text = document.getElementById("js--text");
+    text.innerText = data.text;
